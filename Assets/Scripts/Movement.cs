@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     private Vector3 _leftFlip = new Vector3(0, 180, 0);
     private Vector2 _horizontalVelocity;
     private float _horizontalSpeed;
+    private float _verticalSpeed;
     private float _signPreviosFrame;
     private float _signCurrentFrame;
     private bool _isGround;
@@ -35,9 +36,11 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         _horizontalSpeed = Input.GetAxis("Horizontal");
+        _verticalSpeed = Input.GetAxis("Vertical");
         StateUpdate();
         Flip();
         Jump();
+        Animate();
     }
 
     private void Move()
@@ -68,5 +71,11 @@ public class Movement : MonoBehaviour
     {
         _checkGroundRay = Physics2D.Raycast(transform.position, -Vector2.up, _rayDistance, _groundLayerMask);
         _isGround = _checkGroundRay;
+    }
+
+    private void Animate()
+    {
+        _animator.SetBool("isWalk", _horizontalSpeed != 0 && _isGround ? true : false);
+        _animator.SetBool("isJump", !_isGround ? true : false);
     }
 }
