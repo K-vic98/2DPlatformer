@@ -1019,6 +1019,8 @@ GameObject:
   - component: {fileID: 824246050}
   - component: {fileID: 824246049}
   - component: {fileID: 824246051}
+  - component: {fileID: 824246053}
+  - component: {fileID: 824246052}
   m_Layer: 0
   m_Name: Alien 1
   m_TagString: Untagged
@@ -1104,6 +1106,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _path: {fileID: 386337762}
   _speed: 4
+--- !u!58 &824246052
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824246048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008416176, y: -0.14306808}
+  serializedVersion: 2
+  m_Radius: 0.9816847
+--- !u!114 &824246053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824246048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b457609e9bcd43a4abefc0fba5efaa65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &828202233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,6 +1273,7 @@ GameObject:
   - component: {fileID: 1574572716}
   - component: {fileID: 1574572718}
   - component: {fileID: 1574572720}
+  - component: {fileID: 1574572719}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Untagged
@@ -1388,6 +1419,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _rayDistance: 0.3
+--- !u!114 &1574572719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574572712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9856713331fe340a4ba4452078310f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1574572720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,6 +1604,8 @@ GameObject:
   - component: {fileID: 2102199972}
   - component: {fileID: 2102199974}
   - component: {fileID: 2102199973}
+  - component: {fileID: 2102199976}
+  - component: {fileID: 2102199975}
   m_Layer: 0
   m_Name: Alien 2
   m_TagString: Untagged
@@ -1646,6 +1691,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &2102199975
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102199971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007164955, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.813241
+--- !u!114 &2102199976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102199971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b457609e9bcd43a4abefc0fba5efaa65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2139804474
 GameObject:
   m_ObjectHideFlags: 0
