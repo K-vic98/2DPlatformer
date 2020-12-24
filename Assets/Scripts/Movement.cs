@@ -61,7 +61,7 @@ public class Movement : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && _isGround)
+        if (Input.GetKeyDown(KeyCode.Space) && _isGround)
         {
             _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
         }
