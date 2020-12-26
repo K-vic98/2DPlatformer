@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private GameManager _gameManager; 
+    [SerializeField] private LevelLoader _levelLoader; 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
             Destroy(collision.gameObject);
-           _gameManager.GoForPlayerDeathOption();
+            _levelLoader.LoadLevel();
         }
     }
 }
