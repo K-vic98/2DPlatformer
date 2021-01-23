@@ -1,4 +1,4 @@
-# 2DPlatformer
+# 2D platformer
 My task was to realize:
 1. Character control;
 2. Running and jumping animation;
